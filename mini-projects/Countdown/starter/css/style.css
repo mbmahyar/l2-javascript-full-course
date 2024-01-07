@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins',sans-serif;
+}
+
+main {
+    height: 100vh;
+    background-color: #f1f5f8;
+    display: flex;
+    align-items: center;
+}
+
+main .content {
+    width: 100%;
+    height: 55%;
+    display: flex;
+    gap: 50px;
+    padding: 0 50px;
+}
+
+/****** IMAGE ******/
+main .content .image_wrapper {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+main .content .image_wrapper .image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/****** TEXT ******/
+main .content .text_wrapper {
+    width: 50%;
+    align-self: center;
+    padding-bottom: 10px;
+}
+
+main .content .text_wrapper h1 {
+    color: #356ca3;
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    letter-spacing: 3px;
+}
+
+main .content .text_wrapper h3 {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    color: #2a3e54;
+}
+
+main .content .text_wrapper p {
+    opacity: 0.5;
+    margin-bottom: 35px;
+}
+
+
+/****** TIMER ******/
+main .content .text_wrapper .countdown {
+    display: flex;
+    gap: 20px;
+}
+
+main .content .text_wrapper .countdown .time_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 70px;
+    background-color: #112c42;
+    color: #fff;
+    padding-bottom: 7px;
+}
+
+main .content .text_wrapper .countdown .time_box .time_number {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+main .content .text_wrapper .countdown .time_box span:nth-child(2) {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+

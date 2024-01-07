@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #dfecf5;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 45vw;
+    max-width: 900px;
+    height: 400px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider .slide {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 35px;
+    position: absolute;
+    transition-duration: .6s;
+}
+
+/****** IMAGE ******/
+.slider .slide .img_wrapper {
+    position: relative;
+}
+
+.slider .slide .img_wrapper::before {
+    content: "";
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: #56a6ea;
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-right: -152px;
+}
+
+.slider .slide .img_wrapper img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.slider .slide .img_wrapper .quote_icon {
+    position: absolute;
+    top: 10px;
+    left: -5px;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background-color: #56a6ea;
+    text-align: center;
+}
+
+.slider .slide .img_wrapper .quote_icon i {
+    font-size: 20px;
+    margin-top: 8px;
+    color: #fff;
+}
+
+/****** TEXTS ******/
+.slider .slide h3 {
+    font-size: 17px;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    margin-bottom: 3px;
+}
+
+.slider .slide span {
+    color: #6eb2ec;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.slider .slide p {
+    opacity: 0.5;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 22px;
+    font-size: 14px;
+}
+
+/****** CONTROL ICONS ******/
+.carousel_control_icon {
+    display: flex;
+    gap: 23px;
+    /* margin: 15px auto 0; */
+    justify-content: center;
+    
+}
+
+.carousel_control_icon a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #8dcbf9;
+}
+
+.carousel_control_icon a:hover {
+    color: #3c91da;
+}
+
